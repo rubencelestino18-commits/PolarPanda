@@ -1,0 +1,315 @@
+/*==================================================
+                CHECKOUT
+==================================================*/
+
+.checkout{
+
+    min-height:100vh;
+
+    background:#fff7fb;
+
+    padding-bottom:80px;
+
+}
+
+
+/*==================================================
+                TARJETAS
+==================================================*/
+
+.checkout-card{
+
+    background:#ffffff;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+
+/*==================================================
+                TITULOS
+==================================================*/
+
+.checkout h2,
+.checkout h3,
+.checkout h4,
+.checkout h5{
+
+    font-family:"Fredoka",sans-serif;
+
+    color:#ff5b93;
+
+}
+
+
+/*==================================================
+                LABELS
+==================================================*/
+
+.checkout label{
+
+    font-weight:700;
+
+    margin-bottom:8px;
+
+    color:#555;
+
+}
+
+
+/*==================================================
+                INPUTS
+==================================================*/
+
+.checkout .form-control,
+.checkout .form-select{
+
+    height:52px;
+
+    border-radius:14px;
+
+    border:2px solid #eee;
+
+    transition:.25s;
+
+}
+
+
+.checkout textarea{
+
+    border-radius:14px;
+
+    border:2px solid #eee;
+
+}
+
+
+.checkout .form-control:focus,
+.checkout .form-select:focus,
+.checkout textarea:focus{
+
+    border-color:#ff8cb5;
+
+    box-shadow:0 0 0 .15rem rgba(255,140,181,.2);
+
+}
+
+
+/*==================================================
+                RESUMEN
+==================================================*/
+
+.item-checkout{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:12px 0;
+
+    border-bottom:1px dashed #eee;
+
+}
+
+
+.item-checkout:last-child{
+
+    border-bottom:none;
+
+}
+
+
+.item-checkout img{
+
+    width:65px;
+
+    height:65px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+}
+
+
+.item-checkout h6{
+
+    margin:0;
+
+    font-weight:700;
+
+}
+
+
+.item-checkout small{
+
+    color:#888;
+
+}
+
+
+/*==================================================
+                TOTAL
+==================================================*/
+
+#totalCheckout{
+
+    text-align:right;
+
+    color:#ff4b86;
+
+    font-size:30px;
+
+    font-weight:bold;
+
+}
+
+
+/*==================================================
+                PAGO
+==================================================*/
+
+#contenidoPago{
+
+    margin-top:20px;
+
+    animation:fade .35s;
+
+}
+
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(12px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/*==================================================
+                TARJETA
+==================================================*/
+
+.tarjeta-box{
+
+    background:linear-gradient(135deg,#ff93bc,#ff6b9f);
+
+    color:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    margin-bottom:25px;
+
+}
+
+
+.tarjeta-box h4{
+
+    color:white;
+
+}
+
+
+.tarjeta-numero{
+
+    font-size:26px;
+
+    letter-spacing:3px;
+
+    margin:25px 0;
+
+}
+
+
+.tarjeta-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    font-size:15px;
+
+}
+
+
+/*==================================================
+                QR
+==================================================*/
+
+.qr-box{
+
+    text-align:center;
+
+    padding:25px;
+
+    border:2px dashed #ffd4e4;
+
+    border-radius:20px;
+
+    background:white;
+
+}
+
+
+.qr-box img{
+
+    width:220px;
+
+    margin-bottom:20px;
+
+}
+
+
+/*==================================================
+                BOTON
+==================================================*/
+
+#btnConfirmarCompra{
+
+    font-size:18px;
+
+    padding:15px;
+
+}
+
+
+/*==================================================
+                RESPONSIVE
+==================================================*/
+
+@media(max-width:768px){
+
+.checkout-card{
+
+    padding:22px;
+
+}
+
+.tarjeta-numero{
+
+    font-size:20px;
+
+}
+
+}

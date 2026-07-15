@@ -1,0 +1,366 @@
+/*==================================================
+                GIFTBOX HERO
+==================================================*/
+
+.giftbox-hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:120px 0 80px;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #FFF6EE,
+        #FDECF3,
+        #EAF8FF
+    );
+
+}
+
+
+
+.giftbox-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    border-radius:50%;
+
+    background:#FFE3EC;
+
+    right:-120px;
+
+    top:-120px;
+
+    opacity:.5;
+
+}
+
+
+
+.giftbox-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:220px;
+
+    height:220px;
+
+    border-radius:50%;
+
+    background:#DDF5FF;
+
+    bottom:-70px;
+
+    left:-70px;
+
+    opacity:.45;
+
+}
+
+/*==================================================
+                HERO BADGE
+==================================================*/
+
+.hero-badge{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    background:white;
+
+    color:var(--primary-dark);
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    box-shadow:var(--shadow);
+
+    margin-bottom:25px;
+
+}
+
+/*==================================================
+                HERO TEXTO
+==================================================*/
+
+.giftbox-hero h1{
+
+    font-size:58px;
+
+    line-height:1.1;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.giftbox-hero p{
+
+    font-size:20px;
+
+    color:#666;
+
+    max-width:520px;
+
+}
+
+/*==================================================
+                HERO IMAGE
+==================================================*/
+
+.hero-giftbox{
+
+    width:480px;
+
+    margin:auto;
+
+    border-radius:35px;
+
+    box-shadow:var(--shadow-hover);
+
+    animation:float 4s ease infinite;
+
+}
+
+/*==================================================
+                PROGRESS
+==================================================*/
+
+.progress{
+
+    border-radius:50px;
+
+    overflow:hidden;
+
+    background:#F7E9EE;
+
+}
+
+
+
+.progress-bar{
+
+    background:
+
+    linear-gradient(
+        90deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+}
+
+/*==================================================
+            OCASIONES
+==================================================*/
+
+.giftbox-page .category-card{
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+}
+
+
+
+.giftbox-page .category-card i{
+
+    font-size:55px;
+
+    color:var(--primary-dark);
+
+}
+
+
+
+.giftbox-page .category-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/*==================================================
+            PRODUCTOS
+==================================================*/
+
+.giftbox-page .product-card{
+
+    height:100%;
+
+}
+
+
+
+.giftbox-page .product-content{
+
+    text-align:center;
+
+}
+
+
+
+.giftbox-page .btn-primary{
+
+    border:none;
+
+    border-radius:50px;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+}
+
+/*==================================================
+                RESUMEN
+==================================================*/
+
+#resumen{
+
+    padding-left:18px;
+
+    margin:25px 0;
+
+}
+
+
+
+#resumen li{
+
+    margin-bottom:10px;
+
+}
+
+/*==================================================
+            BOTÓN WHATSAPP
+==================================================*/
+
+.btn-success{
+
+    border:none;
+
+    border-radius:50px;
+
+    padding:14px;
+
+    background:#25D366;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+
+
+.btn-success:hover{
+
+    background:#1EBE5D;
+
+    transform:translateY(-4px);
+
+}
+
+/*==================================================
+            MENSAJE
+==================================================*/
+
+textarea{
+
+    min-height:180px;
+
+}
+
+/*==================================================
+            ENTRADAS
+==================================================*/
+
+.giftbox-hero h1{
+
+    animation:fadeUp .7s ease;
+
+}
+
+.giftbox-hero p{
+
+    animation:fadeUp .9s ease;
+
+}
+
+.hero-giftbox{
+
+    animation:
+
+    float 4s ease infinite,
+
+    fadeUp .9s ease;
+
+}
+/*==================================
+        OCASIONES
+==================================*/
+
+.category-card{
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    border:2px solid transparent;
+
+    border-radius:20px;
+
+}
+
+.category-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.category-card.activa{
+
+    background:#FFE9F2;
+
+    border-color:#FF8EB8;
+
+    transform:scale(1.05);
+
+    box-shadow:0 15px 35px rgba(255,105,180,.25);
+
+}
+
+.category-card.activa i{
+
+    color:#FF5A93;
+
+}
+
+.category-card.activa h4{
+
+    color:#FF5A93;
+
+}
+/*==================================================
+            FIN GIFTBOX.CSS
+==================================================*/

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Polar & Panda | Tienda</title>
+
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Icons -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+
+    <!-- Fonts -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Fredoka:wght@400;700&family=Nunito:wght@400;700&family=Quicksand:wght@400;700&display=swap"
+        rel="stylesheet">
+
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tienda.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+</head>
+
+
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <div id="navbar"></div>
+
+
+
+
+
+
+
+
+    <!-- TITULO -->
+
+
+    <section class="page-header">
+
+
+        <div class="container text-center">
+
+
+            <h1>
+                Nuestra colección
+            </h1>
+
+
+            <p>
+                Encuentra regalos llenos de ternura
+            </p>
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- CATEGORIAS -->
+
+
+    <!-- CATEGORÍAS -->
+
+    <section class="section-padding">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>
+                    Categorías
+                </span>
+
+                <h2>
+                    Elige tu favorito
+                </h2>
+
+            </div>
+
+
+            <div class="category-filters">
+
+                <button class="active" onclick="filtrarProductos('todos',this)">
+                    <i class="bi bi-grid-3x3-gap-fill"></i>
+                    Todos
+                </button>
+
+                <button onclick="filtrarProductos('peluches',this)">
+                    <i class="bi bi-emoji-smile-fill"></i>
+                    Peluches
+                </button>
+
+                <button onclick="filtrarProductos('tazas',this)">
+                    <i class="bi bi-cup-hot-fill"></i>
+                    Tazas
+                </button>
+
+                <button onclick="filtrarProductos('papeleria',this)">
+                    <i class="bi bi-journal-richtext"></i>
+                    Papelería
+                </button>
+
+                <button onclick="filtrarProductos('accesorios',this)">
+                    <i class="bi bi-gift-fill"></i>
+                    Accesorios
+                </button>
+
+                <button onclick="filtrarProductos('decoracion',this)">
+                    <i class="bi bi-house-heart-fill"></i>
+                    Decoración
+                </button>
+
+            </div>
+
+    </section>
+
+
+
+
+
+
+
+
+    <!-- PRODUCTOS -->
+
+
+    <section class="section-padding">
+
+
+        <div class="container">
+
+
+            <div class="row g-4" id="productos">
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+    <div id="carrito"></div>
+    <!--====================================
+        FAVORITOS
+=====================================-->
+
+
+    <div id="favoritos"></div>
+    <div id="footer"></div>
+ <!-- SweetAlert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/alertas.js"></script>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Datos -->
+<script src="js/productos.js"></script>
+<script src="js/tienda.js"></script>
+<!-- Componentes -->
+<script src="js/navbar.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/carritoComponent.js"></script>
+<script src="js/favoritosComponent.js"></script>
+
+<!-- Lógica -->
+<script src="js/carrito.js"></script>
+<script src="js/favoritos.js"></script>
+<script src="js/usuarios.js"></script>
+<script src="js/giftbox.js"></script>
+
+<!-- Pago y Checkout -->
+</body>
+
+</html>
